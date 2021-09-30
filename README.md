@@ -12,4 +12,4 @@
 
 [5.2 - AJAX, REST. JSON, CORS]()
 
-[5.3 - — Базы данных и SQL и NoSQL]()
+[5.3 - Базы данных и SQL и NoSQL]()
