@@ -5,6 +5,10 @@
 
 [2. JQuery](https://github.com/netology-code/bweb-homeworks/tree/main/2.%20JQuery)
 
-[3. AJAX, REST. JSON, CORS]()
+[3. AJAX, BX.JS]()
 
-[4. Базы данных. SQL и NoSQL]()
+[4. REST]()
+
+[5. JSON, XML]()
+
+[4. Базы данных. mySQL]()
