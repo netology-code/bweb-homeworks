@@ -7,7 +7,7 @@
 
 [3. AJAX, BX.JS](https://github.com/netology-code/bweb-homeworks/tree/main/3.%20AJAX%2C%20BX.JS)
 
-[4. REST]()
+[4. REST](https://github.com/netology-code/bweb-homeworks/tree/main/4.%20REST)
 
 [5. JSON, XML]()
 
