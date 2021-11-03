@@ -9,6 +9,6 @@
 
 [4. REST](https://github.com/netology-code/bweb-homeworks/tree/main/4.%20REST)
 
-[5. JSON, XML]()
+[5. JSON, XML](https://github.com/netology-code/bweb-homeworks/tree/main/5.%20JSON,%20XML)
 
 [4. Базы данных. mySQL]()
