@@ -158,36 +158,15 @@ class Dadata
 // За счёт этого не создаются новые сетевые соединения на каждый запрос,
 // а переиспользуется существующее.
 
-$token = "ВАШ_API_КЛЮЧ";
-$secret = "ВАШ_СЕКРЕТНЫЙ_КЛЮЧ";
+$token = "0c8b7d7788ff4d71d12e08ba8ea0dc772a065907";
+$secret = "940a6eb08da1765d18a14f478840eac34cbb771d";
 
 $dadata = new Dadata($token, $secret);
 $dadata->init();
 
 // Стандартизовать ФИО
-$result = $dadata->clean("name", "Сергей Владимерович Иванов");
-print_r($result);
+$result = $dadata->clean("name", $_POST['user_name']." ".$_POST['user_second_name']." ".$_POST['user_last_name']);
 
-// Стандартизовать адрес
-$result = $dadata->clean("address", "москва сухонская 11 89");
-print_r($result);
-
-// Найти компанию по ИНН
-$fields = array("query" => "7707083893", "count" => 5);
-$result = $dadata->suggest("party", $fields);
-print_r($result);
-
-// Найти адрес по КЛАДР-коду
-$fields = array("query" => "77000000000283600", "count" => 1);
-$result = $dadata->findById("address", $fields);
-print_r($result);
-
-// Определить город по IP
-$result = $dadata->iplocate("46.226.227.20");
-print_r($result);
-
-// Определить адрес по координатам
-$result = $dadata->geolocate(55.878, 37.653);
-print_r($result);
+echo json_encode($result);
 
 $dadata->close();
