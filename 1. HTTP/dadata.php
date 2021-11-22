@@ -167,6 +167,8 @@ $dadata->init();
 // Стандартизовать ФИО
 $result = $dadata->clean("name", $_POST['user_name']." ".$_POST['user_second_name']." ".$_POST['user_last_name']);
 
-echo json_encode($result);
+echo '<pre>';
+print_r($result);
+echo '</pre>';
 
 $dadata->close();
