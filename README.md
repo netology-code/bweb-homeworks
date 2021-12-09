@@ -5,7 +5,7 @@
 
 [2. JQuery](https://github.com/netology-code/bweb-homeworks/tree/main/2.%20JQuery)
 
-[3. AJAX, BX.JS](https://github.com/netology-code/bweb-homeworks/tree/main/3.%20AJAX%2C%20BX.JS)
+[3. BITRIX JS](https://github.com/netology-code/bweb-homeworks/tree/main/3.%20BITRIX%20JS)
 
 [4. REST](https://github.com/netology-code/bweb-homeworks/tree/main/4.%20REST)
 
