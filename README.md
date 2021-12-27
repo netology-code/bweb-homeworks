@@ -11,4 +11,4 @@
 
 [5. JSON, XML](https://github.com/netology-code/bweb-homeworks/tree/main/5.%20JSON,%20XML)
 
-[4. Базы данных. mySQL](https://github.com/netology-code/bweb-homeworks/tree/main/4.%20%D0%91%D0%B0%D0%B7%D1%8B%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.%20mySQL)
+[6. Базы данных. mySQL](https://github.com/netology-code/bweb-homeworks/tree/main/6.%20MySQL)
