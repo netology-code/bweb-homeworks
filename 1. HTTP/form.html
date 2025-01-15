@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Форма стандартизации</title>
 </head>
 <body>
-	<form action="dadata.php" method="POST">
+    <form action="dadata.php" method="POST">
+        <input type="hidden" name="api_key" value="c6f682e15a0538d851b40ae141534744965fb92a">
+        <input type="hidden" name="secret_key" value="86ae3c7b4728d83e23fc67a07f977ce60c6edb1e">
 
-		<strong>Ваше имя<span class="mf-req">*</span></strong><br>
-		<input type="text" name="user_name" value=""><br>
+        <strong>Ваше имя<span class="mf-req">*</span></strong><br>
+        <input type="text" name="user_name" value=""><br>
 
-		<strong>Ваше отчество<span class="mf-req">*</span></strong><br>
-		<input type="text" name="user_second_name" value=""><br>
+        <strong>Ваше отчество<span class="mf-req">*</span></strong><br>
+        <input type="text" name="user_second_name" value=""><br>
 
-		<strong>Ваша фамилия<span class="mf-req">*</span></strong><br>
-		<input type="text" name="user_last_name" value=""><br>
+        <strong>Ваша фамилия<span class="mf-req">*</span></strong><br>
+        <input type="text" name="user_last_name" value=""><br>
 
-		<input type="submit" name="submit" value="Отправить">
-		</form>
+        <input type="submit" name="submit" value="Отправить">
+    </form>
 </body>
 </html>
-
