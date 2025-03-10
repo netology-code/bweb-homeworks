@@ -141,6 +141,8 @@ class Dadata
     {
         $result = curl_exec($this->handle);
         $info = curl_getinfo($this->handle);
+
+        // Проверка кода ответа
         if ($info['http_code'] == 429) {
             throw new TooManyRequests();
         } elseif ($info['http_code'] != 200) {
@@ -150,7 +152,6 @@ class Dadata
     }
 }
 
-
 // Метод init() следует вызвать один раз в начале,
 // затем можно сколько угодно раз вызывать отдельные методы clean(), suggest() и т.п.
 // и в конце следует один раз вызвать метод close().
@@ -158,17 +159,24 @@ class Dadata
 // За счёт этого не создаются новые сетевые соединения на каждый запрос,
 // а переиспользуется существующее.
 
-$token = "0c8b7d7788ff4d71d12e08ba8ea0dc772a065907";
-$secret = "940a6eb08da1765d18a14f478840eac34cbb771d";
+// Укажите свой API-ключ и секретный ключ
+$token = "c6f682e15a0538d851b40ae141534744965fb92a";
+$secret = "86ae3c7b4728d83e23fc67a07f977ce60c6edb1e";
 
 $dadata = new Dadata($token, $secret);
 $dadata->init();
 
-// Стандартизовать ФИО
-$result = $dadata->clean("name", $_POST['user_name']." ".$_POST['user_second_name']." ".$_POST['user_last_name']);
+// Стандартизовать ФИО из POST-запроса
+$result = $dadata->clean(
+    "name", 
+    $_POST['user_name'] . " " . $_POST['user_second_name'] . " " . $_POST['user_last_name']
+);
 
+// Вывод стандартизированного результата
 echo '<pre>';
 print_r($result);
 echo '</pre>';
 
 $dadata->close();
+
+?>
